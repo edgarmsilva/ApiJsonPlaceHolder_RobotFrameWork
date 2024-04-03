@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-04-03T20:04:23.259760" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0 (Python 3.10.12 on linux)" generated="2024-04-03T20:12:25.770082" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="/home/runner/work/ApiJsonPlaceHolder_RobotFrameWork/ApiJsonPlaceHolder_RobotFrameWork/tests">
 <suite id="s1-s1" name="apiJsonPlaceholder" source="/home/runner/work/ApiJsonPlaceHolder_RobotFrameWork/ApiJsonPlaceHolder_RobotFrameWork/tests/apiJsonPlaceholder.robot">
 <test id="s1-s1-t1" name="Scenario: Validate if the emails in the comments are properly formatted" line="10">
 <kw name="Create Session" owner="RequestsLibrary" type="SETUP">
-<msg time="2024-04-03T20:04:23.333333" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2024-04-03T20:12:25.843553" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>jsonplaceholder</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-04-03T20:04:23.333168" elapsed="0.000317"/>
+<status status="PASS" start="2024-04-03T20:12:25.843386" elapsed="0.000324"/>
 </kw>
 <kw name="Given that I search for the username &quot;Delphine&quot;" owner="apiJsonPlaceholder_steps" source_name="that I search for the username &quot;${user}&quot;">
 <kw name="GetUser ${user}" owner="apiJsonPlaceholder" source_name="GetUser ${user}">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-04-03T20:04:23.511625" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users?username=Delphine 
+<msg time="2024-04-03T20:12:25.956432" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users?username=Delphine 
  path_url=/users?username=Delphine 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2024-04-03T20:04:23.511823" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users?username=Delphine 
+<msg time="2024-04-03T20:12:25.956578" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users?username=Delphine 
  status=200, reason=OK 
- headers={'Date': 'Wed, 03 Apr 2024 20:04:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712066704&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=6LLLReF2z2ZKVO00ouAowM9Um2fZz2Q1FT5Kf1m830I%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712066704&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=6LLLReF2z2ZKVO00ouAowM9Um2fZz2Q1FT5Kf1m830I%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1712066715', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"23d-EKDCRFg7oh6G4KjjoWlynBpL2AY"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '8712', 'Server': 'cloudflare', 'CF-RAY': '86ebaadecbb7e587-DFW', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Wed, 03 Apr 2024 20:12:25 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712175145&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=VfF4Yvcs5%2FjxJDnmLHwboAOPtTy4IjuG7vUJqO7o1l0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712175145&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=VfF4Yvcs5%2FjxJDnmLHwboAOPtTy4IjuG7vUJqO7o1l0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '999', 'X-Ratelimit-Reset': '1712175203', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"23d-EKDCRFg7oh6G4KjjoWlynBpL2AY"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'MISS', 'Server': 'cloudflare', 'CF-RAY': '86ebb6a5ee5b426a-EWR', 'Content-Encoding': 'gzip', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "id": 9,
@@ -48,56 +48,56 @@
   }
 ] 
  </msg>
-<msg time="2024-04-03T20:04:23.511986" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:25.956706" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>jsonplaceholder</arg>
 <arg>/users?username\=${user}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.334318" elapsed="0.177696"/>
+<status status="PASS" start="2024-04-03T20:12:25.844573" elapsed="0.112160"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.512671" level="INFO">Argument types are:
+<msg time="2024-04-03T20:12:25.957285" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${response.status_code}</arg>
 <arg>200</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.512207" elapsed="0.000525"/>
+<status status="PASS" start="2024-04-03T20:12:25.956875" elapsed="0.000472"/>
 </kw>
 <return>
 <value>${response.json()}</value>
-<status status="PASS" start="2024-04-03T20:04:23.512785" elapsed="0.000046"/>
+<status status="PASS" start="2024-04-03T20:12:25.957400" elapsed="0.000043"/>
 </return>
-<msg time="2024-04-03T20:04:23.513208" level="INFO">${response} = [{'id': 9, 'name': 'Glenna Reichert', 'username': 'Delphine', 'email': 'Chaim_McDermott@dana.io', 'address': {'street': 'Dayna Park', 'suite': 'Suite 449', 'city': 'Bartholomebury', 'zipcode': '76495-...</msg>
+<msg time="2024-04-03T20:12:25.957817" level="INFO">${response} = [{'id': 9, 'name': 'Glenna Reichert', 'username': 'Delphine', 'email': 'Chaim_McDermott@dana.io', 'address': {'street': 'Dayna Park', 'suite': 'Suite 449', 'city': 'Bartholomebury', 'zipcode': '76495-...</msg>
 <var>${response}</var>
-<status status="PASS" start="2024-04-03T20:04:23.334009" elapsed="0.179223"/>
+<status status="PASS" start="2024-04-03T20:12:25.844253" elapsed="0.113588"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.513547" level="INFO">${response} = [{'id': 9, 'name': 'Glenna Reichert', 'username': 'Delphine', 'email': 'Chaim_McDermott@dana.io', 'address': {'street': 'Dayna Park', 'suite': 'Suite 449', 'city': 'Bartholomebury', 'zipcode': '76495-...</msg>
+<msg time="2024-04-03T20:12:25.958143" level="INFO">${response} = [{'id': 9, 'name': 'Glenna Reichert', 'username': 'Delphine', 'email': 'Chaim_McDermott@dana.io', 'address': {'street': 'Dayna Park', 'suite': 'Suite 449', 'city': 'Bartholomebury', 'zipcode': '76495-...</msg>
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.513355" elapsed="0.000227"/>
+<status status="PASS" start="2024-04-03T20:12:25.957957" elapsed="0.000222"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.333724" elapsed="0.179910"/>
+<status status="PASS" start="2024-04-03T20:12:25.843956" elapsed="0.114274"/>
 </kw>
 <kw name="When I use the id fetched to search for the posts written by the user" owner="apiJsonPlaceholder_steps">
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.514234" level="INFO">${id} = 9</msg>
+<msg time="2024-04-03T20:12:25.958787" level="INFO">${id} = 9</msg>
 <var>${id}</var>
 <arg>${response}[0][id]</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.514084" elapsed="0.000170"/>
+<status status="PASS" start="2024-04-03T20:12:25.958637" elapsed="0.000171"/>
 </kw>
 <kw name="GetUserPosts ${id}" owner="apiJsonPlaceholder" source_name="GetUserPosts ${userId}">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-04-03T20:04:23.549843" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts?userId=9 
+<msg time="2024-04-03T20:12:26.013304" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts?userId=9 
  path_url=/posts?userId=9 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2024-04-03T20:04:23.549926" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts?userId=9 
+<msg time="2024-04-03T20:12:26.013388" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts?userId=9 
  status=200, reason=OK 
- headers={'Date': 'Wed, 03 Apr 2024 20:04:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712165951&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=JM1xo9xAwog62jVcX75KhwVZgeqtYGCYl2edmqStxxE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712165951&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=JM1xo9xAwog62jVcX75KhwVZgeqtYGCYl2edmqStxxE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '998', 'X-Ratelimit-Reset': '1712165963', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"aa1-7w0ImWAnFGRWG4ZRQUECVBaSqRo"', 'Content-Encoding': 'gzip', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '8712', 'Server': 'cloudflare', 'CF-RAY': '86ebaadf0c14e587-DFW', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Wed, 03 Apr 2024 20:12:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712175145&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=VfF4Yvcs5%2FjxJDnmLHwboAOPtTy4IjuG7vUJqO7o1l0%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712175145&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=VfF4Yvcs5%2FjxJDnmLHwboAOPtTy4IjuG7vUJqO7o1l0%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '998', 'X-Ratelimit-Reset': '1712175203', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"aa1-7w0ImWAnFGRWG4ZRQUECVBaSqRo"', 'Content-Encoding': 'gzip', 'Via': '1.1 vegur', 'CF-Cache-Status': 'MISS', 'Server': 'cloudflare', 'CF-RAY': '86ebb6a64ee9426a-EWR', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[
   {
     "userId": 9,
@@ -161,12 +161,12 @@
   }
 ] 
  </msg>
-<msg time="2024-04-03T20:04:23.550104" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.013558" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
 <var>${allPosts}</var>
 <arg>jsonplaceholder</arg>
 <arg>/posts?userId\=${userId}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.514689" elapsed="0.035445"/>
+<status status="PASS" start="2024-04-03T20:12:25.959276" elapsed="0.054312"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -174,140 +174,140 @@
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.550734" elapsed="0.000209"/>
+<status status="PASS" start="2024-04-03T20:12:26.014260" elapsed="0.000185"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 81, 'title': 'tempora rem veritatis voluptas quo dolores vero', 'body': 'facere qui nesciunt est voluptatum voluptatem nisi\nsequi eligendi necessitatibus ea at rerum itaque\nharum...</var>
-<status status="PASS" start="2024-04-03T20:04:23.550643" elapsed="0.000342"/>
+<status status="PASS" start="2024-04-03T20:12:26.014164" elapsed="0.000318"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.551146" elapsed="0.000175"/>
+<status status="PASS" start="2024-04-03T20:12:26.014643" elapsed="0.000184"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 82, 'title': 'laudantium voluptate suscipit sunt enim enim', 'body': 'ut libero sit aut totam inventore sunt\nporro sint qui sunt molestiae\nconsequatur cupiditate qui iste ducimus...</var>
-<status status="PASS" start="2024-04-03T20:04:23.551066" elapsed="0.000290"/>
+<status status="PASS" start="2024-04-03T20:12:26.014563" elapsed="0.000302"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.551509" elapsed="0.000162"/>
+<status status="PASS" start="2024-04-03T20:12:26.015058" elapsed="0.000189"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 83, 'title': 'odit et voluptates doloribus alias odio et', 'body': 'est molestiae facilis quis tempora numquam nihil qui\nvoluptate sapiente consequatur est qui\nnecessitatibus aut...</var>
-<status status="PASS" start="2024-04-03T20:04:23.551429" elapsed="0.000274"/>
+<status status="PASS" start="2024-04-03T20:12:26.014972" elapsed="0.000312"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.551847" elapsed="0.000160"/>
+<status status="PASS" start="2024-04-03T20:12:26.015447" elapsed="0.000166"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 84, 'title': 'optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut', 'body': 'sint molestiae magni a et quos\neaque et quasi\nut rerum debitis similique ven...</var>
-<status status="PASS" start="2024-04-03T20:04:23.551774" elapsed="0.000265"/>
+<status status="PASS" start="2024-04-03T20:12:26.015366" elapsed="0.000280"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.552188" elapsed="0.000164"/>
+<status status="PASS" start="2024-04-03T20:12:26.015795" elapsed="0.000162"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 85, 'title': 'dolore veritatis porro provident adipisci blanditiis et sunt', 'body': 'similique sed nisi voluptas iusto omnis\nmollitia et quo\nassumenda suscipit officia magnam si...</var>
-<status status="PASS" start="2024-04-03T20:04:23.552111" elapsed="0.000274"/>
+<status status="PASS" start="2024-04-03T20:12:26.015717" elapsed="0.000273"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.552529" elapsed="0.000242"/>
+<status status="PASS" start="2024-04-03T20:12:26.016138" elapsed="0.000249"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 86, 'title': 'placeat quia et porro iste', 'body': 'quasi excepturi consequatur iste autem temporibus sed molestiae beatae\net quaerat et esse ut\nvoluptatem occaecati et vel expli...</var>
-<status status="PASS" start="2024-04-03T20:04:23.552453" elapsed="0.000352"/>
+<status status="PASS" start="2024-04-03T20:12:26.016064" elapsed="0.000359"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.552952" elapsed="0.000158"/>
+<status status="PASS" start="2024-04-03T20:12:26.016572" elapsed="0.000161"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 87, 'title': 'nostrum quis quasi placeat', 'body': 'eos et molestiae\nnesciunt ut a\ndolores perspiciatis repellendus repellat aliquid\nmagnam sint rem ipsum est'}</var>
-<status status="PASS" start="2024-04-03T20:04:23.552877" elapsed="0.000265"/>
+<status status="PASS" start="2024-04-03T20:12:26.016496" elapsed="0.000270"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.553321" elapsed="0.000163"/>
+<status status="PASS" start="2024-04-03T20:12:26.016947" elapsed="0.000163"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 88, 'title': 'sapiente omnis fugit eos', 'body': 'consequatur omnis est praesentium\nducimus non iste\nneque hic deserunt\nvoluptatibus veniam cum et rerum sed'}</var>
-<status status="PASS" start="2024-04-03T20:04:23.553244" elapsed="0.000273"/>
+<status status="PASS" start="2024-04-03T20:12:26.016871" elapsed="0.000272"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.553663" elapsed="0.000168"/>
+<status status="PASS" start="2024-04-03T20:12:26.017286" elapsed="0.000155"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 89, 'title': 'sint soluta et vel magnam aut ut sed qui', 'body': 'repellat aut aperiam totam temporibus autem et\narchitecto magnam ut\nconsequatur qui cupiditate rerum quia soluta...</var>
-<status status="PASS" start="2024-04-03T20:04:23.553589" elapsed="0.000275"/>
+<status status="PASS" start="2024-04-03T20:12:26.017213" elapsed="0.000260"/>
 </iter>
 <iter>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.554006" elapsed="0.000155"/>
+<status status="PASS" start="2024-04-03T20:12:26.017613" elapsed="0.000153"/>
 </kw>
 <var name="${post}">{'userId': 9, 'id': 90, 'title': 'ad iusto omnis odit dolor voluptatibus', 'body': 'minus omnis soluta quia\nqui sed adipisci voluptates illum ipsam voluptatem\neligendi officia ut in\neos soluta simi...</var>
-<status status="PASS" start="2024-04-03T20:04:23.553932" elapsed="0.000261"/>
+<status status="PASS" start="2024-04-03T20:12:26.017541" elapsed="0.000256"/>
 </iter>
 <var>${post}</var>
 <value>@{allPosts.json()}</value>
-<status status="PASS" start="2024-04-03T20:04:23.550219" elapsed="0.003998"/>
+<status status="PASS" start="2024-04-03T20:12:26.013671" elapsed="0.004148"/>
 </for>
 <return>
 <value>${allPosts}</value>
-<status status="PASS" start="2024-04-03T20:04:23.554251" elapsed="0.000021"/>
+<status status="PASS" start="2024-04-03T20:12:26.017854" elapsed="0.000021"/>
 </return>
-<msg time="2024-04-03T20:04:23.554378" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.017977" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
 <var>${allPosts}</var>
-<status status="PASS" start="2024-04-03T20:04:23.514433" elapsed="0.039964"/>
+<status status="PASS" start="2024-04-03T20:12:25.959010" elapsed="0.058993"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.554648" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.018246" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
 <arg>${allPosts}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.554492" elapsed="0.000190"/>
+<status status="PASS" start="2024-04-03T20:12:26.018098" elapsed="0.000181"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.513846" elapsed="0.040889"/>
+<status status="PASS" start="2024-04-03T20:12:25.958413" elapsed="0.059913"/>
 </kw>
 <kw name="Then I validate if the emails in the comment section are in the proper format" owner="apiJsonPlaceholder_steps">
 <kw name="Get post Coments emails ${allPosts}" owner="apiJsonPlaceholder" source_name="Get post Coments ${postId}">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-04-03T20:04:23.591323" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/comments?postId=emails%20%3CResponse%20%5B200%5D%3E 
+<msg time="2024-04-03T20:12:26.070863" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/comments?postId=emails%20%3CResponse%20%5B200%5D%3E 
  path_url=/comments?postId=emails%20%3CResponse%20%5B200%5D%3E 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2024-04-03T20:04:23.591396" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/comments?postId=emails%20%3CResponse%20%5B200%5D%3E 
+<msg time="2024-04-03T20:12:26.070980" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/comments?postId=emails%20%3CResponse%20%5B200%5D%3E 
  status=200, reason=OK 
- headers={'Date': 'Wed, 03 Apr 2024 20:04:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712165951&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=JM1xo9xAwog62jVcX75KhwVZgeqtYGCYl2edmqStxxE%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712165951&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=JM1xo9xAwog62jVcX75KhwVZgeqtYGCYl2edmqStxxE%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '997', 'X-Ratelimit-Reset': '1712165963', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '8712', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebaadf4c54e587-DFW', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Wed, 03 Apr 2024 20:12:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '997', 'X-Ratelimit-Reset': '1712175203', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'MISS', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebb6a6af81426a-EWR', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[] 
  </msg>
-<msg time="2024-04-03T20:04:23.591486" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.071103" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>jsonplaceholder</arg>
 <arg>/comments?postId\=${postId}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.555512" elapsed="0.035995"/>
+<status status="PASS" start="2024-04-03T20:12:26.019102" elapsed="0.052030"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -316,131 +316,131 @@
 <arg>${eachComent}[email]</arg>
 <arg>^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$</arg>
 <doc>Returns a list of all non-overlapping matches in the given string.</doc>
-<status status="NOT RUN" start="2024-04-03T20:04:23.592027" elapsed="0.000017"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.071711" elapsed="0.000019"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${result}">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>WARNING!! The Email ${eachComent}[email] From comment ID No. ${postId} is not a valid Email..."</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-04-03T20:04:23.592210" elapsed="0.000015"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.071911" elapsed="0.000016"/>
 </kw>
-<status status="NOT RUN" start="2024-04-03T20:04:23.592117" elapsed="0.000136"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.071810" elapsed="0.000147"/>
 </branch>
-<status status="NOT RUN" start="2024-04-03T20:04:23.592101" elapsed="0.000171"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.071792" elapsed="0.000186"/>
 </if>
 <var name="${eachComent}"/>
-<status status="NOT RUN" start="2024-04-03T20:04:23.591920" elapsed="0.000371"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.071615" elapsed="0.000383"/>
 </iter>
 <var>${eachComent}</var>
 <value>@{response.json()}</value>
-<status status="NOT RUN" start="2024-04-03T20:04:23.591558" elapsed="0.000756"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.071212" elapsed="0.000812"/>
 </for>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2024-04-03T20:04:23.592346" elapsed="0.000021"/>
+<status status="PASS" start="2024-04-03T20:12:26.072058" elapsed="0.000023"/>
 </return>
-<status status="PASS" start="2024-04-03T20:04:23.555245" elapsed="0.037208"/>
+<status status="PASS" start="2024-04-03T20:12:26.018809" elapsed="0.053363"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.554907" elapsed="0.037588"/>
+<status status="PASS" start="2024-04-03T20:12:26.018477" elapsed="0.053738"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.332458" elapsed="0.260136"/>
+<status status="PASS" start="2024-04-03T20:12:25.842548" elapsed="0.229765"/>
 </test>
 <test id="s1-s1-t2" name="Scenario: Validate the username search by an inexistent user" line="15">
 <kw name="Create Session" owner="RequestsLibrary" type="SETUP">
-<msg time="2024-04-03T20:04:23.593315" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2024-04-03T20:12:26.073134" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>jsonplaceholder</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-04-03T20:04:23.593178" elapsed="0.000274"/>
+<status status="PASS" start="2024-04-03T20:12:26.072993" elapsed="0.000282"/>
 </kw>
 <kw name="When I search for a inexistent username &quot;inexistentUser&quot;" owner="apiJsonPlaceholder_steps" source_name="I search for a inexistent username &quot;${inexistentUser}&quot;">
 <kw name="GetUserInexistentUser ${inexistentUser}" owner="apiJsonPlaceholder" source_name="GetUserInexistentUser ${user}">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-04-03T20:04:23.732888" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users?username=inexistentUser 
+<msg time="2024-04-03T20:12:26.176918" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/users?username=inexistentUser 
  path_url=/users?username=inexistentUser 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2024-04-03T20:04:23.733020" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users?username=inexistentUser 
+<msg time="2024-04-03T20:12:26.177048" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/users?username=inexistentUser 
  status=200, reason=OK 
- headers={'Date': 'Wed, 03 Apr 2024 20:04:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712165952&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hwm%2Bxe53gssjx3GJjtQ5TLShqv9QDWrH6B3iAZUySZc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712165952&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hwm%2Bxe53gssjx3GJjtQ5TLShqv9QDWrH6B3iAZUySZc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '996', 'X-Ratelimit-Reset': '1712165963', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '8711', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebaae01a1e4862-DFW', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Wed, 03 Apr 2024 20:12:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '996', 'X-Ratelimit-Reset': '1712175203', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'MISS', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebb6a74aa842e6-EWR', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[] 
  </msg>
-<msg time="2024-04-03T20:04:23.733157" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.177180" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>jsonplaceholder</arg>
 <arg>/users?username\=${user}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.594136" elapsed="0.139046"/>
+<status status="PASS" start="2024-04-03T20:12:26.073996" elapsed="0.103214"/>
 </kw>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2024-04-03T20:04:23.733253" elapsed="0.000040"/>
+<status status="PASS" start="2024-04-03T20:12:26.177278" elapsed="0.000034"/>
 </return>
-<msg time="2024-04-03T20:04:23.733434" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.177456" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
-<status status="PASS" start="2024-04-03T20:04:23.593896" elapsed="0.139559"/>
+<status status="PASS" start="2024-04-03T20:12:26.073754" elapsed="0.103723"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.733806" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.177751" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.733609" elapsed="0.000234"/>
+<status status="PASS" start="2024-04-03T20:12:26.177585" elapsed="0.000202"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.593635" elapsed="0.140259"/>
+<status status="PASS" start="2024-04-03T20:12:26.073470" elapsed="0.104366"/>
 </kw>
 <kw name="Then I receive an empty body response" owner="apiJsonPlaceholder_steps">
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.734704" level="INFO">Length is 0.</msg>
-<msg time="2024-04-03T20:04:23.734770" level="INFO">${size} = 0</msg>
+<msg time="2024-04-03T20:12:26.178544" level="INFO">Length is 0.</msg>
+<msg time="2024-04-03T20:12:26.178609" level="INFO">${size} = 0</msg>
 <var>${size}</var>
 <arg>${response.json()}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.734336" elapsed="0.000453"/>
+<status status="PASS" start="2024-04-03T20:12:26.178208" elapsed="0.000420"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.735045" level="INFO">Argument types are:
+<msg time="2024-04-03T20:12:26.178845" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${size}</arg>
 <arg>0</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.734918" elapsed="0.000178"/>
+<status status="PASS" start="2024-04-03T20:12:26.178730" elapsed="0.000162"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.734080" elapsed="0.001069"/>
+<status status="PASS" start="2024-04-03T20:12:26.177995" elapsed="0.000980"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.592844" elapsed="0.142403"/>
+<status status="PASS" start="2024-04-03T20:12:26.072561" elapsed="0.106509"/>
 </test>
 <test id="s1-s1-t3" name="Scenario: Validate the post search by an inexistent user id" line="19">
 <kw name="Create Session" owner="RequestsLibrary" type="SETUP">
-<msg time="2024-04-03T20:04:23.735964" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2024-04-03T20:12:26.179791" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>jsonplaceholder</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-04-03T20:04:23.735822" elapsed="0.000293"/>
+<status status="PASS" start="2024-04-03T20:12:26.179668" elapsed="0.000240"/>
 </kw>
 <kw name="When I use an inexistent user id to search for the posts" owner="apiJsonPlaceholder_steps">
 <kw name="GetUserPosts ${99999}" owner="apiJsonPlaceholder" source_name="GetUserPosts ${userId}">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-04-03T20:04:23.857041" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts?userId=99999 
+<msg time="2024-04-03T20:12:26.278201" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/posts?userId=99999 
  path_url=/posts?userId=99999 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2024-04-03T20:04:23.857143" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts?userId=99999 
+<msg time="2024-04-03T20:12:26.278283" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/posts?userId=99999 
  status=200, reason=OK 
- headers={'Date': 'Wed, 03 Apr 2024 20:04:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712165952&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hwm%2Bxe53gssjx3GJjtQ5TLShqv9QDWrH6B3iAZUySZc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712165952&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hwm%2Bxe53gssjx3GJjtQ5TLShqv9QDWrH6B3iAZUySZc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '995', 'X-Ratelimit-Reset': '1712165963', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '8711', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebaae0ec0e3acf-DFW', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Wed, 03 Apr 2024 20:12:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '995', 'X-Ratelimit-Reset': '1712175203', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'MISS', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebb6a7ef6b4210-EWR', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[] 
  </msg>
-<msg time="2024-04-03T20:04:23.857291" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.278395" level="INFO">${allPosts} = &lt;Response [200]&gt;</msg>
 <var>${allPosts}</var>
 <arg>jsonplaceholder</arg>
 <arg>/posts?userId\=${userId}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.737120" elapsed="0.120197"/>
+<status status="PASS" start="2024-04-03T20:12:26.180757" elapsed="0.097665"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -448,81 +448,81 @@
 <arg>${post}[userId]</arg>
 <arg>${userId}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="NOT RUN" start="2024-04-03T20:04:23.857991" elapsed="0.000022"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.278999" elapsed="0.000020"/>
 </kw>
 <var name="${post}"/>
-<status status="NOT RUN" start="2024-04-03T20:04:23.857844" elapsed="0.000203"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.278874" elapsed="0.000181"/>
 </iter>
 <var>${post}</var>
 <value>@{allPosts.json()}</value>
-<status status="NOT RUN" start="2024-04-03T20:04:23.857416" elapsed="0.000656"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.278498" elapsed="0.000580"/>
 </for>
 <return>
 <value>${allPosts}</value>
-<status status="PASS" start="2024-04-03T20:04:23.858115" elapsed="0.000033"/>
+<status status="PASS" start="2024-04-03T20:12:26.279116" elapsed="0.000023"/>
 </return>
-<msg time="2024-04-03T20:04:23.858277" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.279257" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
-<status status="PASS" start="2024-04-03T20:04:23.736668" elapsed="0.121629"/>
+<status status="PASS" start="2024-04-03T20:12:26.180349" elapsed="0.098929"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.858627" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.279558" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.858405" elapsed="0.000258"/>
+<status status="PASS" start="2024-04-03T20:12:26.279384" elapsed="0.000209"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.736335" elapsed="0.122382"/>
+<status status="PASS" start="2024-04-03T20:12:26.180087" elapsed="0.099557"/>
 </kw>
 <kw name="Then I receive an empty body response" owner="apiJsonPlaceholder_steps">
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.859526" level="INFO">Length is 0.</msg>
-<msg time="2024-04-03T20:04:23.859642" level="INFO">${size} = 0</msg>
+<msg time="2024-04-03T20:12:26.280346" level="INFO">Length is 0.</msg>
+<msg time="2024-04-03T20:12:26.280445" level="INFO">${size} = 0</msg>
 <var>${size}</var>
 <arg>${response.json()}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.859196" elapsed="0.000466"/>
+<status status="PASS" start="2024-04-03T20:12:26.280017" elapsed="0.000449"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.859904" level="INFO">Argument types are:
+<msg time="2024-04-03T20:12:26.280687" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${size}</arg>
 <arg>0</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.859777" elapsed="0.000179"/>
+<status status="PASS" start="2024-04-03T20:12:26.280570" elapsed="0.000164"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.858941" elapsed="0.001068"/>
+<status status="PASS" start="2024-04-03T20:12:26.279804" elapsed="0.000983"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.735486" elapsed="0.124622"/>
+<status status="PASS" start="2024-04-03T20:12:26.179272" elapsed="0.101599"/>
 </test>
 <test id="s1-s1-t4" name="Scenario: Validate the post comment search by an inexistent post id" line="24">
 <kw name="Create Session" owner="RequestsLibrary" type="SETUP">
-<msg time="2024-04-03T20:04:23.860901" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
+<msg time="2024-04-03T20:12:26.281652" level="INFO">Creating Session using : alias=jsonplaceholder, url=https://jsonplaceholder.typicode.com, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=True,                     debug=0 </msg>
 <arg>jsonplaceholder</arg>
 <arg>https://jsonplaceholder.typicode.com</arg>
 <arg>verify=true</arg>
 <doc>Create Session: create a HTTP session to a server</doc>
-<status status="PASS" start="2024-04-03T20:04:23.860758" elapsed="0.000462"/>
+<status status="PASS" start="2024-04-03T20:12:26.281521" elapsed="0.000400"/>
 </kw>
 <kw name="When I use an inexistent post id to search for the posts comments" owner="apiJsonPlaceholder_steps">
 <kw name="Get post Coments ${999999}" owner="apiJsonPlaceholder" source_name="Get post Coments ${postId}">
 <kw name="GET On Session" owner="RequestsLibrary">
-<msg time="2024-04-03T20:04:23.971179" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/comments?postId=999999 
+<msg time="2024-04-03T20:12:26.381220" level="INFO">GET Request : url=https://jsonplaceholder.typicode.com/comments?postId=999999 
  path_url=/comments?postId=999999 
  headers={'User-Agent': 'python-requests/2.25.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
  body=None 
  </msg>
-<msg time="2024-04-03T20:04:23.971245" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/comments?postId=999999 
+<msg time="2024-04-03T20:12:26.381306" level="INFO">GET Response : url=https://jsonplaceholder.typicode.com/comments?postId=999999 
  status=200, reason=OK 
- headers={'Date': 'Wed, 03 Apr 2024 20:04:23 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712165952&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hwm%2Bxe53gssjx3GJjtQ5TLShqv9QDWrH6B3iAZUySZc%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712165952&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=hwm%2Bxe53gssjx3GJjtQ5TLShqv9QDWrH6B3iAZUySZc%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '994', 'X-Ratelimit-Reset': '1712165963', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'HIT', 'Age': '8711', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebaae1aa6d2ccf-DFW', 'alt-svc': 'h3=":443"; ma=86400'} 
+ headers={'Date': 'Wed, 03 Apr 2024 20:12:26 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '2', 'Connection': 'keep-alive', 'Report-To': '{"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D"}]}', 'Reporting-Endpoints': 'heroku-nel=https://nel.heroku.com/reports?ts=1712175146&amp;sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&amp;s=Up%2BaE%2F4lsU8sbTiLvjbW%2Bu3drDL2LgmGGlReZw3JgHs%3D', 'Nel': '{"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}', 'X-Powered-By': 'Express', 'X-Ratelimit-Limit': '1000', 'X-Ratelimit-Remaining': '994', 'X-Ratelimit-Reset': '1712175203', 'Vary': 'Origin, Accept-Encoding', 'Access-Control-Allow-Credentials': 'true', 'Cache-Control': 'max-age=43200', 'Pragma': 'no-cache', 'Expires': '-1', 'X-Content-Type-Options': 'nosniff', 'Etag': 'W/"2-l9Fw4VUO7kr8CvBlt4zaMCqXZ0w"', 'Via': '1.1 vegur', 'CF-Cache-Status': 'MISS', 'Accept-Ranges': 'bytes', 'Server': 'cloudflare', 'CF-RAY': '86ebb6a89cde0cc2-EWR', 'alt-svc': 'h3=":443"; ma=86400'} 
  body=[] 
  </msg>
-<msg time="2024-04-03T20:04:23.971340" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.381431" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
 <arg>jsonplaceholder</arg>
 <arg>/comments?postId\=${postId}</arg>
 <doc>Sends a GET request on a previously created HTTP Session.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.862122" elapsed="0.109240"/>
+<status status="PASS" start="2024-04-03T20:12:26.282807" elapsed="0.098653"/>
 </kw>
 <for flavor="IN">
 <iter>
@@ -531,68 +531,68 @@
 <arg>${eachComent}[email]</arg>
 <arg>^\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*(\\.\\w{2,3})+$</arg>
 <doc>Returns a list of all non-overlapping matches in the given string.</doc>
-<status status="NOT RUN" start="2024-04-03T20:04:23.971869" elapsed="0.000019"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.382072" elapsed="0.000019"/>
 </kw>
 <if>
 <branch type="IF" condition="not ${result}">
 <kw name="Log To Console" owner="BuiltIn">
 <arg>WARNING!! The Email ${eachComent}[email] From comment ID No. ${postId} is not a valid Email..."</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" start="2024-04-03T20:04:23.972061" elapsed="0.000024"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.382254" elapsed="0.000016"/>
 </kw>
-<status status="NOT RUN" start="2024-04-03T20:04:23.971959" elapsed="0.000153"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.382161" elapsed="0.000136"/>
 </branch>
-<status status="NOT RUN" start="2024-04-03T20:04:23.971943" elapsed="0.000188"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.382146" elapsed="0.000170"/>
 </if>
 <var name="${eachComent}"/>
-<status status="NOT RUN" start="2024-04-03T20:04:23.971776" elapsed="0.000374"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.381978" elapsed="0.000357"/>
 </iter>
 <var>${eachComent}</var>
 <value>@{response.json()}</value>
-<status status="NOT RUN" start="2024-04-03T20:04:23.971417" elapsed="0.000753"/>
+<status status="NOT RUN" start="2024-04-03T20:12:26.381537" elapsed="0.000818"/>
 </for>
 <return>
 <value>${response}</value>
-<status status="PASS" start="2024-04-03T20:04:23.972202" elapsed="0.000025"/>
+<status status="PASS" start="2024-04-03T20:12:26.382387" elapsed="0.000023"/>
 </return>
-<msg time="2024-04-03T20:04:23.972340" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.382522" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <var>${response}</var>
-<status status="PASS" start="2024-04-03T20:04:23.861720" elapsed="0.110641"/>
+<status status="PASS" start="2024-04-03T20:12:26.282404" elapsed="0.100139"/>
 </kw>
 <kw name="Set Test Variable" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.972624" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<msg time="2024-04-03T20:12:26.382805" level="INFO">${response} = &lt;Response [200]&gt;</msg>
 <arg>${response}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.972458" elapsed="0.000201"/>
+<status status="PASS" start="2024-04-03T20:12:26.382641" elapsed="0.000199"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.861408" elapsed="0.111300"/>
+<status status="PASS" start="2024-04-03T20:12:26.282107" elapsed="0.100782"/>
 </kw>
 <kw name="Then I receive an empty body response" owner="apiJsonPlaceholder_steps">
 <kw name="Get Length" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.973411" level="INFO">Length is 0.</msg>
-<msg time="2024-04-03T20:04:23.973475" level="INFO">${size} = 0</msg>
+<msg time="2024-04-03T20:12:26.383621" level="INFO">Length is 0.</msg>
+<msg time="2024-04-03T20:12:26.383686" level="INFO">${size} = 0</msg>
 <var>${size}</var>
 <arg>${response.json()}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.973089" elapsed="0.000404"/>
+<status status="PASS" start="2024-04-03T20:12:26.383299" elapsed="0.000406"/>
 </kw>
 <kw name="Should Be Equal As Numbers" owner="BuiltIn">
-<msg time="2024-04-03T20:04:23.973711" level="INFO">Argument types are:
+<msg time="2024-04-03T20:12:26.383924" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
 <arg>${size}</arg>
 <arg>0</arg>
 <doc>Fails if objects are unequal after converting them to real numbers.</doc>
-<status status="PASS" start="2024-04-03T20:04:23.973594" elapsed="0.000162"/>
+<status status="PASS" start="2024-04-03T20:12:26.383808" elapsed="0.000163"/>
 </kw>
-<status status="PASS" start="2024-04-03T20:04:23.972862" elapsed="0.000945"/>
+<status status="PASS" start="2024-04-03T20:12:26.383080" elapsed="0.000943"/>
 </kw>
 <tag>teste</tag>
-<status status="PASS" start="2024-04-03T20:04:23.860373" elapsed="0.113519"/>
+<status status="PASS" start="2024-04-03T20:12:26.281090" elapsed="0.103015"/>
 </test>
-<status status="PASS" start="2024-04-03T20:04:23.276737" elapsed="0.697589"/>
+<status status="PASS" start="2024-04-03T20:12:25.787070" elapsed="0.597422"/>
 </suite>
-<status status="PASS" start="2024-04-03T20:04:23.260537" elapsed="0.714342"/>
+<status status="PASS" start="2024-04-03T20:12:25.770852" elapsed="0.614131"/>
 </suite>
 <statistics>
 <total>
