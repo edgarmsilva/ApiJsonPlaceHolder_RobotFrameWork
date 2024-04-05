@@ -1,10 +1,10 @@
 *** Settings ***
-Library     Collections
-Library     RequestsLibrary
-Library     String
-
+Resource     ../../resources/base.robot
 
 *** Keywords ***
+setupApi
+    Create Session    jsonplaceholder    ${BASE_URI}    verify=true
+
 GetUser ${user}
     ${response}=    GET On Session    jsonplaceholder    /users?username\=${user}
     Should Be Equal As Numbers    ${response.status_code}    200
@@ -23,11 +23,6 @@ GetUserPosts ${userId}
     END
 
     RETURN    ${allPosts}
-
-# Get post Coments emails ${allPosts}
-#    FOR    ${eachPost}    IN    @{allPosts.json()}
-#    ${email}=    Get post Coments ${eachPost}[id]
-#    END
 
 Get post Coments ${postId}
     ${response}=    GET On Session    jsonplaceholder    /comments?postId\=${postId}

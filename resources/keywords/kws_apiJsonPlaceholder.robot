@@ -1,8 +1,7 @@
 *** Settings ***
 
-# Resource     ../tests/apiJsonPlaceholder.robot
-Resource     ../Api/apiJsonPlaceholder.robot
 
+Resource     ../base.robot
 
 *** Keywords ***
 
@@ -17,7 +16,6 @@ I use the id fetched to search for the posts written by the user
     
 I validate if the emails in the comment section are in the proper format
     Get post Coments emails ${allPosts}
-
 
 I search for a inexistent username "${inexistentUser}"
     ${response}=      GetUserInexistentUser ${inexistentUser}

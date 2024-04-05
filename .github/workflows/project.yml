@@ -24,7 +24,7 @@ jobs:
     
     - name: Run Tests
       run: |
-        robot -d ./results tests
+        robot -d ./results features
 
     - name: Send Report
       if: always()

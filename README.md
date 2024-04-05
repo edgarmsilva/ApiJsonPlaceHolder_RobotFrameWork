@@ -29,7 +29,7 @@ pip install -r requirements.txt
 ### Execution:
 To run all tests from command console:
 ```
-robot -d ./results tests
+robot -d ./results features
 ```
 
 ### Report Page:
