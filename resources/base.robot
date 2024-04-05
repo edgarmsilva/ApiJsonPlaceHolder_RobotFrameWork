@@ -1,11 +1,4 @@
 *** Settings ***
-
-########################################################################
-##    Libraries for the project    ##
-## #####################################################################
-
-
-*** Settings ***
 Library     Collections
 Library     RequestsLibrary
 Library     String
